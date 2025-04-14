@@ -46,59 +46,6 @@ header {
     letter-spacing: 2px;
 }
 
-/* Mobile Menu Button - Now global */
-.mobile-menu-button {
-    display: block;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 0.5rem;
-    z-index: 1000;
-}
-
-.hamburger {
-    display: block;
-    position: relative;
-    width: 24px;
-    height: 2px;
-    background: var(--primary-color);
-    transition: all 0.3s ease-in-out;
-}
-
-.hamburger::before,
-.hamburger::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 24px;
-    height: 2px;
-    background: var(--primary-color);
-    transition: all 0.3s ease-in-out;
-}
-
-.hamburger::before {
-    top: -8px;
-}
-
-.hamburger::after {
-    bottom: -8px;
-}
-
-/* Hamburger Animation */
-.mobile-menu-button.active .hamburger {
-    background: transparent;
-}
-
-.mobile-menu-button.active .hamburger::before {
-    top: 0;
-    transform: rotate(45deg);
-}
-
-.mobile-menu-button.active .hamburger::after {
-    bottom: 0;
-    transform: rotate(-45deg);
-}
-
 /* Navigation Links - Always hidden by default */
 .nav-links {
     display: none;
@@ -106,6 +53,7 @@ header {
     top: 60px;
     left: 0;
     right: 0;
+    width: 100%;
     background: var(--nav-background);
     padding: 1rem;
     flex-direction: column;
@@ -114,10 +62,12 @@ header {
     opacity: 0;
     transform: translateY(-10px);
     transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 999;
 }
 
+/* Only show nav-links when active class is present */
 .nav-links.active {
-    display: flex;
+    display: flex !important;
     opacity: 1;
     transform: translateY(0);
 }
@@ -249,7 +199,64 @@ footer {
     color: rgba(255, 255, 255, 0.8);
 }
 
-/* Remove the media query that shows nav-links on desktop */
+/* Mobile Menu Button - Always visible */
+.mobile-menu-button {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1000;
+    margin-left: auto;
+}
+
+/* Ensure hamburger is visible */
+.hamburger {
+    display: block;
+    position: relative;
+    width: 24px;
+    height: 2px;
+    background: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: var(--primary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    bottom: -8px;
+}
+
+/* Hamburger Animation */
+.mobile-menu-button.active .hamburger {
+    background: transparent;
+}
+
+.mobile-menu-button.active .hamburger::before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.mobile-menu-button.active .hamburger::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+}
+
+/* Update media queries */
 @media (max-width: 768px) {
     .header-container {
         padding: 1rem;
@@ -261,6 +268,11 @@ footer {
 
     h1 {
         font-size: 2.5rem;
+    }
+
+    /* Ensure nav-links are hidden on mobile by default */
+    .nav-links {
+        display: none;
     }
 }
 
