@@ -1,5 +1,3 @@
-# Welcome to Sol Good Media
-
 We're a creative audio company on a mission to make the world a little more peaceful, inspired, and connected—one podcast at a time.
 
 We produce and distribute thousands of soothing sounds, audiobooks, and original podcasts to help people relax, sleep better, and spark curiosity. Whether it's a classic story from the public domain, calming rain sounds, or an uplifting message to start your day, Sol Good Media is here to support your well-being with high-quality audio experiences.
