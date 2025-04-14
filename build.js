@@ -6,7 +6,7 @@ const chokidar = require('chokidar');
 // Configuration
 const config = {
     contentDir: 'content',
-    outputDir: 'public',
+    outputDir: 'docs',
     templateFile: 'template.html',
     siteName: 'Sol Good Media' // Updated site name
 };

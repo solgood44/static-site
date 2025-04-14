@@ -6,7 +6,7 @@
   "scripts": {
     "build": "node build.js",
     "dev": "node build.js --watch",
-    "serve": "npm run build && live-server public"
+    "serve": "npm run build && live-server docs"
   },
   "dependencies": {
     "marked": "^12.0.0",
