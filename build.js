@@ -7,7 +7,8 @@ const chokidar = require('chokidar');
 const config = {
     contentDir: 'content',
     outputDir: 'public',
-    templateFile: 'template.html'
+    templateFile: 'template.html',
+    siteName: 'Sol Good Media' // Updated site name
 };
 
 // Ensure output directory exists
@@ -33,14 +34,22 @@ function buildPage(markdownPath) {
     // Replace template placeholders
     let page = template
         .replace('{{title}}', title)
+        .replace('{{site_name}}', config.siteName)
         .replace('{{content}}', html);
     
     // Determine output path
     const relativePath = path.relative(config.contentDir, markdownPath);
-    const outputPath = path.join(
-        config.outputDir,
-        relativePath.replace(/\.md$/, '.html')
-    );
+    let outputPath;
+    
+    // Special handling for index.md
+    if (path.basename(markdownPath) === 'index.md') {
+        outputPath = path.join(config.outputDir, 'index.html');
+    } else {
+        outputPath = path.join(
+            config.outputDir,
+            relativePath.replace(/\.md$/, '.html')
+        );
+    }
     
     // Ensure directory exists
     fs.ensureDirSync(path.dirname(outputPath));

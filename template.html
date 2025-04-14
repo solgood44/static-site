@@ -3,23 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{title}}</title>
+    <title>{{title}} | Sol Good Media</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Sol Good Media - Creating peaceful, inspiring audio content through podcasts, audiobooks, and soothing sounds.">
 </head>
 <body>
     <header>
         <nav>
-            <a href="/">Home</a>
-            <a href="/blog">Blog</a>
-            <a href="/about">About</a>
-            <a href="/faq">FAQ</a>
+            <div class="logo">
+                <a href="/index.html">{{site_name}}</a>
+            </div>
+            <div class="nav-links">
+                <a href="/audiobooks.html">Audiobooks</a>
+                <a href="https://solgood44.github.io/sounds/">Nature Sounds</a>
+                <a href="/podcasts.html">Podcasts</a>
+                <a href="/tools.html">Creator Tools</a>
+                <a href="/about.html">About</a>
+            </div>
         </nav>
     </header>
     <main>
         {{content}}
     </main>
     <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2024 Sol Good Media. All rights reserved. Creating peace through audio.</p>
     </footer>
     <script src="/js/main.js"></script>
 </body>

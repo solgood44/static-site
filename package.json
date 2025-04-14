@@ -5,11 +5,15 @@
   "main": "build.js",
   "scripts": {
     "build": "node build.js",
-    "dev": "node build.js --watch"
+    "dev": "node build.js --watch",
+    "serve": "npm run build && live-server public"
   },
   "dependencies": {
     "marked": "^12.0.0",
     "fs-extra": "^11.2.0",
     "chokidar": "^3.6.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
   }
-} 
+}
