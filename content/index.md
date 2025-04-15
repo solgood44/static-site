@@ -26,8 +26,8 @@ To be the go-to library for calming, meaningful audio content. We're building th
 Want to stay updated with our latest releases and insights? Subscribe to our newsletter:
 
 <form class="newsletter-form">
-    <input type="email" placeholder="Enter your email..." aria-label="Email for newsletter">
-    <button type="submit">Get Good Vibes</button>
+    <input type="email" placeholder="Enter your best email..." aria-label="Email for newsletter">
+    <button type="submit">Subscribe</button>
 </form>
 
 [Connect with us](mailto:hello@solgoodmedia.com) to explore collaborations or learn more about our work. 

@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Getting Started with Blogging | Sol Good Media</title>
+    <title>Untitled | Sol Good Media Blog</title>
     <base href="/static-site/">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <meta name="description" content="Sol Good Media - Creating peaceful, inspiring audio content through podcasts, audiobooks, and soothing sounds.">
+    <meta name="description" content="">
 </head>
 <body>
     <header>
@@ -24,41 +24,23 @@
             <a href="https://solgood44.github.io/sounds/">Nature Sounds</a>
             <a href="podcasts.html">Podcasts</a>
             <a href="tools.html">Creator Tools</a>
+            <a href="blog.html">Blog</a>
             <a href="about.html">About</a>
         </nav>
     </header>
-    <main>
-        <h1>Getting Started with Blogging</h1>
-<p><em>Published on April 14, 2024</em></p>
-<p>Welcome to my second blog post! This post will show you how to create and format your blog posts using Markdown.</p>
-<h2>Writing in Markdown</h2>
-<p>Markdown is a simple way to format text. Here are some common formatting options:</p>
-<ul>
-<li><strong>Bold text</strong> using double asterisks</li>
-<li><em>Italic text</em> using single asterisks</li>
-<li>Lists using dashes or numbers</li>
-<li><a href="https://example.com">Links</a> using square and round brackets</li>
-<li><code>Code</code> using backticks</li>
-</ul>
-<h2>Adding Images</h2>
-<p>You can add images using this format:
-<img src="/path/to/image.jpg" alt="Alt text for image"></p>
-<h2>Code Blocks</h2>
-<pre><code class="language-javascript">// Example code block
-function hello() {
-    console.log(&quot;Hello, world!&quot;);
-}
-</code></pre>
-<h2>Tips for Writing</h2>
-<ol>
-<li>Start with a clear title</li>
-<li>Add a publication date</li>
-<li>Use headings to structure your content</li>
-<li>Break up text with lists and examples</li>
-<li>End with a call to action or conclusion</li>
-</ol>
-<p>Happy blogging! </p>
-
+    <main class="blog-post">
+        <article>
+            <header class="blog-header">
+                <h1>{{title}}</h1>
+                <div class="blog-meta">
+                    <time datetime="2025-04-15">{{date}}</time>
+                    <span class="author">By Sol Good Media</span>
+                </div>
+            </header>
+            <div class="blog-content">
+                
+            </div>
+        </article>
     </main>
     <footer>
         <p>&copy; 2024 Sol Good Media. All rights reserved. Creating peace through audio.</p>

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Original Podcasts | Sol Good Media</title>
-    <base href="/static-site/">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta name="description" content="Sol Good Media - Creating peaceful, inspiring audio content through podcasts, audiobooks, and soothing sounds.">
@@ -15,17 +14,15 @@
             <div class="logo">
                 <a href="index.html">Sol Good Media</a>
             </div>
+            <nav class="nav-links">
+                <a href="about.html">About</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
             <button class="mobile-menu-button" aria-label="Toggle menu">
                 <span class="hamburger"></span>
             </button>
         </div>
-        <nav class="nav-links">
-            <a href="audiobooks.html">Audiobooks</a>
-            <a href="https://solgood44.github.io/sounds/">Nature Sounds</a>
-            <a href="podcasts.html">Podcasts</a>
-            <a href="tools.html">Creator Tools</a>
-            <a href="about.html">About</a>
-        </nav>
     </header>
     <main>
         <h1>Original Podcasts</h1>
@@ -99,5 +96,11 @@
         <p>&copy; 2024 Sol Good Media. All rights reserved. Creating peace through audio.</p>
     </footer>
     <script src="js/main.js"></script>
+    <script>
+        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
 </body>
 </html> 
