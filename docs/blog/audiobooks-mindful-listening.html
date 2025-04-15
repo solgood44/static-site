@@ -4,33 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Art of Mindful Audiobook Listening | Sol Good Media Blog</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <base href="/static-site/">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta name="description" content="Transform your audiobook experience from passive entertainment to active mindfulness practice with these expert tips and insights.">
 </head>
 <body>
     <header>
         <div class="header-container">
             <div class="logo">
-                <a href="../index.html">Sol Good Media</a>
+                <a href="index.html">Sol Good Media</a>
             </div>
-            <nav class="nav-links">
-                <a href="../about.html">About</a>
-                <a href="../blog.html">Blog</a>
-                <a href="../contact.html">Contact</a>
-            </nav>
             <button class="mobile-menu-button" aria-label="Toggle menu">
                 <span class="hamburger"></span>
             </button>
         </div>
+        <nav class="nav-links">
+            <a href="audiobooks.html">Audiobooks</a>
+            <a href="https://solgood44.github.io/sounds/">Nature Sounds</a>
+            <a href="podcasts.html">Podcasts</a>
+            <a href="tools.html">Creator Tools</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+        </nav>
     </header>
     <main class="blog-post">
-        <div class="blog-navigation">
-            <a href="../blog.html" class="back-to-blog">← Back to Blog</a>
-        </div>
         <article>
+            <header class="blog-header">
+                <h1>{{title}}</h1>
+                <div class="blog-meta">
+                    <time datetime="2024-04-13">{{date}}</time>
+                    <span class="author">By Sol Good Media</span>
+                </div>
+            </header>
             <div class="blog-content">
-                <p>In our fast-paced world, audiobooks offer a unique opportunity to combine storytelling with mindfulness. Let&#39;s explore how to transform your listening experience into a practice of presence and deep engagement.</p>
+                <h1>The Art of Mindful Audiobook Listening</h1>
+<p>In our fast-paced world, audiobooks offer a unique opportunity to combine storytelling with mindfulness. Let&#39;s explore how to transform your listening experience into a practice of presence and deep engagement.</p>
 <h2>Why Mindful Listening Matters</h2>
 <p>Mindful listening goes beyond just hearing words. It&#39;s about:</p>
 <ul>
@@ -72,24 +81,14 @@
 <li>Better focus and concentration</li>
 <li>Deeper appreciation for literature</li>
 </ul>
-<p>Remember, mindful listening is a practice. Start with short sessions and gradually increase duration as your focus strengthens. Let each audiobook become an opportunity for both entertainment and personal growth.</p>
+<p>Remember, mindful listening is a practice. Start with short sessions and gradually increase duration as your focus strengthens. Let each audiobook become an opportunity for both entertainment and personal growth. </p>
 
             </div>
         </article>
-        <div class="blog-navigation">
-            <a href="../blog.html" class="back-to-blog">← Back to Blog</a>
-        </div>
     </main>
     <footer>
         <p>&copy; 2024 Sol Good Media. All rights reserved. Creating peace through audio.</p>
     </footer>
-    <script src="../js/main.js"></script>
-    <script>
-        // Mobile menu toggle
-        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('active');
-            this.classList.toggle('active');
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html> 

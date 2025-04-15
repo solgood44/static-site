@@ -4,33 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Art of Mindful Podcasting | Sol Good Media Blog</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <base href="/static-site/">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta name="description" content="Learn how to create meaningful, impactful audio content that resonates with your audience while maintaining mindfulness in your creative process.">
 </head>
 <body>
     <header>
         <div class="header-container">
             <div class="logo">
-                <a href="../index.html">Sol Good Media</a>
+                <a href="index.html">Sol Good Media</a>
             </div>
-            <nav class="nav-links">
-                <a href="../about.html">About</a>
-                <a href="../blog.html">Blog</a>
-                <a href="../contact.html">Contact</a>
-            </nav>
             <button class="mobile-menu-button" aria-label="Toggle menu">
                 <span class="hamburger"></span>
             </button>
         </div>
+        <nav class="nav-links">
+            <a href="audiobooks.html">Audiobooks</a>
+            <a href="https://solgood44.github.io/sounds/">Nature Sounds</a>
+            <a href="podcasts.html">Podcasts</a>
+            <a href="tools.html">Creator Tools</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+        </nav>
     </header>
     <main class="blog-post">
-        <div class="blog-navigation">
-            <a href="../blog.html" class="back-to-blog">← Back to Blog</a>
-        </div>
         <article>
+            <header class="blog-header">
+                <h1>{{title}}</h1>
+                <div class="blog-meta">
+                    <time datetime="2024-04-11">{{date}}</time>
+                    <span class="author">By Sol Good Media</span>
+                </div>
+            </header>
             <div class="blog-content">
-                <p>Creating audio content isn&#39;t just about speaking into a microphone – it&#39;s about crafting an experience that touches hearts and minds. Let&#39;s explore how to approach podcasting with mindfulness and intention.</p>
+                <h1>The Art of Mindful Podcasting</h1>
+<p>Creating audio content isn&#39;t just about speaking into a microphone – it&#39;s about crafting an experience that touches hearts and minds. Let&#39;s explore how to approach podcasting with mindfulness and intention.</p>
 <h2>The Mindful Approach to Content Creation</h2>
 <h3>Preparation</h3>
 <p>Before recording, focus on:</p>
@@ -111,24 +120,14 @@
 <li>Seek feedback and grow</li>
 <li>Maintain work-life balance</li>
 </ol>
-<p>Remember, mindful podcasting is about quality over quantity. Focus on creating meaningful content that serves your audience while honoring your own well-being and creative journey.</p>
+<p>Remember, mindful podcasting is about quality over quantity. Focus on creating meaningful content that serves your audience while honoring your own well-being and creative journey. </p>
 
             </div>
         </article>
-        <div class="blog-navigation">
-            <a href="../blog.html" class="back-to-blog">← Back to Blog</a>
-        </div>
     </main>
     <footer>
         <p>&copy; 2024 Sol Good Media. All rights reserved. Creating peace through audio.</p>
     </footer>
-    <script src="../js/main.js"></script>
-    <script>
-        // Mobile menu toggle
-        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('active');
-            this.classList.toggle('active');
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html> 

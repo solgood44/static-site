@@ -4,33 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Guide to Sleep Sounds: Finding Your Perfect Night's Rest | Sol Good Media Blog</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <base href="/static-site/">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta name="description" content="Explore the science behind sleep sounds and discover how to use different audio experiences to improve your sleep quality naturally.">
 </head>
 <body>
     <header>
         <div class="header-container">
             <div class="logo">
-                <a href="../index.html">Sol Good Media</a>
+                <a href="index.html">Sol Good Media</a>
             </div>
-            <nav class="nav-links">
-                <a href="../about.html">About</a>
-                <a href="../blog.html">Blog</a>
-                <a href="../contact.html">Contact</a>
-            </nav>
             <button class="mobile-menu-button" aria-label="Toggle menu">
                 <span class="hamburger"></span>
             </button>
         </div>
+        <nav class="nav-links">
+            <a href="audiobooks.html">Audiobooks</a>
+            <a href="https://solgood44.github.io/sounds/">Nature Sounds</a>
+            <a href="podcasts.html">Podcasts</a>
+            <a href="tools.html">Creator Tools</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+        </nav>
     </header>
     <main class="blog-post">
-        <div class="blog-navigation">
-            <a href="../blog.html" class="back-to-blog">← Back to Blog</a>
-        </div>
         <article>
+            <header class="blog-header">
+                <h1>{{title}}</h1>
+                <div class="blog-meta">
+                    <time datetime="2024-04-12">{{date}}</time>
+                    <span class="author">By Sol Good Media</span>
+                </div>
+            </header>
             <div class="blog-content">
-                <p>Quality sleep is essential for our physical and mental well-being. The right sounds can create an ideal environment for restful sleep, helping you fall asleep faster and stay asleep longer.</p>
+                <h1>A Guide to Sleep Sounds: Finding Your Perfect Night&#39;s Rest</h1>
+<p>Quality sleep is essential for our physical and mental well-being. The right sounds can create an ideal environment for restful sleep, helping you fall asleep faster and stay asleep longer.</p>
 <h2>The Science of Sleep Sounds</h2>
 <p>Research shows that certain sounds can:</p>
 <ul>
@@ -91,24 +100,14 @@ Combine different sounds to create your perfect sleep environment. For example, 
 Start quieter than you think necessary and adjust up if needed. The goal is to mask disruptions without becoming a disruption itself.</p>
 </li>
 </ol>
-<p>Remember, finding your perfect sleep sound may take time. Be patient and pay attention to how different sounds affect your sleep quality. Sweet dreams!</p>
+<p>Remember, finding your perfect sleep sound may take time. Be patient and pay attention to how different sounds affect your sleep quality. Sweet dreams! </p>
 
             </div>
         </article>
-        <div class="blog-navigation">
-            <a href="../blog.html" class="back-to-blog">← Back to Blog</a>
-        </div>
     </main>
     <footer>
         <p>&copy; 2024 Sol Good Media. All rights reserved. Creating peace through audio.</p>
     </footer>
-    <script src="../js/main.js"></script>
-    <script>
-        // Mobile menu toggle
-        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('active');
-            this.classList.toggle('active');
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html> 

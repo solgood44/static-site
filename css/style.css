@@ -108,14 +108,11 @@ header {
     bottom: -8px;
 }
 
+/* Mobile Navigation */
 @media (max-width: 768px) {
     .header-container {
         padding: 1rem;
-    }
-
-    .mobile-menu-button {
-        display: block;
-        margin-left: auto;
+        justify-content: space-between;
     }
 
     .nav-links {
@@ -125,10 +122,13 @@ header {
         left: 0;
         right: 0;
         background: var(--nav-background);
+        backdrop-filter: blur(10px);
         flex-direction: column;
         padding: 1rem;
         gap: 1rem;
         margin: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        z-index: 999;
     }
 
     .nav-links.active {
@@ -139,15 +139,80 @@ header {
         width: 100%;
         text-align: center;
         padding: 0.75rem;
+        border-radius: 4px;
     }
 
     .nav-links a:hover {
         background: rgba(255, 255, 255, 0.1);
-        border-radius: 4px;
     }
 
-    .blog-post {
-        margin-top: 5rem;
+    .mobile-menu-button {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem;
+        z-index: 1000;
+    }
+
+    .hamburger {
+        display: block;
+        position: relative;
+        width: 24px;
+        height: 2px;
+        background: var(--primary-color);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .hamburger::before,
+    .hamburger::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 24px;
+        height: 2px;
+        background: var(--primary-color);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .hamburger::before {
+        top: -8px;
+    }
+
+    .hamburger::after {
+        bottom: -8px;
+    }
+
+    /* Hamburger Animation */
+    .mobile-menu-button.active .hamburger {
+        background: transparent;
+    }
+
+    .mobile-menu-button.active .hamburger::before {
+        top: 0;
+        transform: rotate(45deg);
+    }
+
+    .mobile-menu-button.active .hamburger::after {
+        bottom: 0;
+        transform: rotate(-45deg);
+    }
+
+    main {
+        padding-top: 4rem;
+    }
+}
+
+/* Desktop Navigation */
+@media (min-width: 769px) {
+    .mobile-menu-button {
+        display: none;
+    }
+
+    .nav-links {
+        display: flex;
+        margin-left: auto;
+        gap: 2rem;
     }
 }
 

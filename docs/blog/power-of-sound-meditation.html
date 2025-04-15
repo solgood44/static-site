@@ -4,33 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Power of Sound Meditation | Sol Good Media Blog</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <base href="/static-site/">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <meta name="description" content="Discover how sound meditation can transform your daily practice and enhance your well-being through carefully curated audio experiences.">
 </head>
 <body>
     <header>
         <div class="header-container">
             <div class="logo">
-                <a href="../index.html">Sol Good Media</a>
+                <a href="index.html">Sol Good Media</a>
             </div>
-            <nav class="nav-links">
-                <a href="../about.html">About</a>
-                <a href="../blog.html">Blog</a>
-                <a href="../contact.html">Contact</a>
-            </nav>
             <button class="mobile-menu-button" aria-label="Toggle menu">
                 <span class="hamburger"></span>
             </button>
         </div>
+        <nav class="nav-links">
+            <a href="audiobooks.html">Audiobooks</a>
+            <a href="https://solgood44.github.io/sounds/">Nature Sounds</a>
+            <a href="podcasts.html">Podcasts</a>
+            <a href="tools.html">Creator Tools</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+        </nav>
     </header>
     <main class="blog-post">
-        <div class="blog-navigation">
-            <a href="../blog.html" class="back-to-blog">← Back to Blog</a>
-        </div>
         <article>
+            <header class="blog-header">
+                <h1>{{title}}</h1>
+                <div class="blog-meta">
+                    <time datetime="2024-04-14">{{date}}</time>
+                    <span class="author">By Sol Good Media</span>
+                </div>
+            </header>
             <div class="blog-content">
-                <p>Sound has been used for thousands of years as a powerful tool for healing, meditation, and spiritual growth. From ancient singing bowls to modern binaural beats, the therapeutic effects of sound continue to enhance our well-being and consciousness.</p>
+                <h1>The Power of Sound Meditation</h1>
+<p>Sound has been used for thousands of years as a powerful tool for healing, meditation, and spiritual growth. From ancient singing bowls to modern binaural beats, the therapeutic effects of sound continue to enhance our well-being and consciousness.</p>
 <h2>Understanding Sound Meditation</h2>
 <p>Sound meditation, also known as sound healing or sound therapy, uses specific frequencies and vibrations to:</p>
 <ul>
@@ -57,24 +66,14 @@
 </ol>
 <h2>Creating Your Sound Practice</h2>
 <p>The key to successful sound meditation is consistency and personal preference. What works for one person may not work for another. Experiment with different sounds and times of day to find your perfect practice.</p>
-<p>Remember, sound meditation isn&#39;t just about listening – it&#39;s about experiencing the vibrations throughout your entire being. Let the sounds wash over you and guide you to deeper states of awareness and peace.</p>
+<p>Remember, sound meditation isn&#39;t just about listening – it&#39;s about experiencing the vibrations throughout your entire being. Let the sounds wash over you and guide you to deeper states of awareness and peace. </p>
 
             </div>
         </article>
-        <div class="blog-navigation">
-            <a href="../blog.html" class="back-to-blog">← Back to Blog</a>
-        </div>
     </main>
     <footer>
         <p>&copy; 2024 Sol Good Media. All rights reserved. Creating peace through audio.</p>
     </footer>
-    <script src="../js/main.js"></script>
-    <script>
-        // Mobile menu toggle
-        document.querySelector('.mobile-menu-button').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('active');
-            this.classList.toggle('active');
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html> 
